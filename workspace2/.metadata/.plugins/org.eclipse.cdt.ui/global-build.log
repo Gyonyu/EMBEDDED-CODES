@@ -1,0 +1,26 @@
+15:18:17 **** Incremental Build of configuration Debug for project TFTBLACKPIL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/st7735.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/st7735.d" -MT"Core/Src/st7735.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/st7735.o"
+../Core/Src/main.c:39:1: warning: data definition has no type or storage class
+   39 | confRCC();
+      | ^~~~~~~
+../Core/Src/main.c:39:1: warning: type defaults to 'int' in declaration of 'confRCC' [-Wimplicit-int]
+arm-none-eabi-gcc -o "TFTBLACKPIL.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/kevin/STM32CubeIDE/workspace2/TFTBLACKPIL/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TFTBLACKPIL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TFTBLACKPIL.elf
+ 
+arm-none-eabi-size  TFTBLACKPIL.elf 
+arm-none-eabi-objdump -h -S TFTBLACKPIL.elf  > "TFTBLACKPIL.list"
+   text	   data	    bss	    dec	    hex	filename
+  49252	     12	   1660	  50924	   c6ec	TFTBLACKPIL.elf
+Finished building: default.size.stdout
+ 
+Finished building: TFTBLACKPIL.list
+ 
+15:18:20 **** Incremental Build of configuration Debug for project TFTBLACKPIL ****
+make -j8 all 
+arm-none-eabi-size  TFTBLACKPIL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49252	     12	   1660	  50924	   c6ec	TFTBLACKPIL.elf
+Finished building: default.size.stdout
+ 

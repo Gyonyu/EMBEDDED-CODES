@@ -1,0 +1,33 @@
+#include "conf.h"
+
+void confRCC(void){
+                /*    IOB,    IOA,   AF*/
+    RCC->AHB1ENR |= (1<<0); // GPIOA ADC1 PA0
+    RCC->APB2ENR|=(1<<7); //PRENDEMOS ADC1
+    RCC->APB2ENR |= (1<<0); //TIM1
+
+}
+void confGPIO(void){
+	GPIOA->MODER |= (3<<0);
+
+}
+
+void confADC(void){
+	/*EMPEZAMOS LA CONFIGURACIÓN DEL ADC1 CON LA CONVERSIÓN EN EL CANAL 13*/
+	ADC1->SQR3|=(13<<0);
+	ADC1->CR2|=(3<<0);//ACTIVAMOS CONTINUOS CONV Y ADCON
+	ADC1->CR1|=(1<<8);//SACANMODE
+	ADC1->SMPR2|=(2<<0); //ESTAMOS CONFIGURANDO 28 CICLOS DE MUESTREO
+}
+
+extern void confSPI(void){
+
+
+}
+
+void config(void){
+    confRCC();
+    confGPIO();
+    confADC();
+    confTIMER();
+}

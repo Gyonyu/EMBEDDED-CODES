@@ -1,0 +1,10 @@
+14:20:19 **** Incremental Build of configuration Debug for project PRACTICA7PWMADC ****
+make -j8 all 
+arm-none-eabi-size  PRACTICA7PWMADC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1532	      4	   1572	   3108	    c24	PRACTICA7PWMADC.elf
+Finished building: default.size.stdout
+ 
+
+14:20:20 Build Finished. 0 errors, 0 warnings. (took 224ms)
+

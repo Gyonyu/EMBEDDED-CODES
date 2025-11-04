@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CARRITOFERIA446ZET6/Core/Src/conf&apos; to &apos;conf.h&apos;" description="Rename resource &apos;conf&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/conf" name="conf.h" stamp="1760398037814" updateReferences="true"/>
+</session>

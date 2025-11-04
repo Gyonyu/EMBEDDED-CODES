@@ -1,0 +1,25 @@
+
+#include "conf.h"
+#include <stm32f446xx.h>
+
+// --------- Function ---------
+void confRCC(void);
+void confGPIO(void);
+// ---------- Class ----------
+// -------- Variables --------
+// ----------- Main -----------
+uint8_t SPI_Send_Data(uint8_t);
+
+int main(void){
+	config();
+	while(1){
+	}
+
+
+}
+
+uint8_t SPI_Send_Data(uint8_t data){
+	while(!(SPI1->SR & SPI_SR_TXE));
+	SPI->DR = data;
+	while(!(SPI1->SR & SPI_SR_RXE));
+}

@@ -1,0 +1,8 @@
+../Core/Src/main.c:58:5:main	1
+../Core/Src/main.c:89:6:vTaskLEDR	3
+../Core/Src/main.c:107:6:vTaskLEDG	3
+../Core/Src/main.c:125:6:vTaskLEDY	4
+../Core/Src/main.c:147:6:vTaskBlink	3
+../Core/Src/main.c:174:6:vTaskButton	5
+../Core/Src/main.c:202:6:confRCC	1
+../Core/Src/main.c:210:6:confGPIO	1

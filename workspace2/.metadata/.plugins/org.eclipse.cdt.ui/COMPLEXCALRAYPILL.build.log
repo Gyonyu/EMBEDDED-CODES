@@ -1,0 +1,41 @@
+16:29:11 **** Incremental Build of configuration Debug for project COMPLEXCALRAYPILL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:21:9: error: 'index' redeclared as different kind of symbol
+   21 | uint8_t index = 0;
+      |         ^~~~~
+In file included from /opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/string.h:24,
+                 from ../Core/Src/main.c:14:
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/strings.h:64:10: note: previous declaration of 'index' with type 'char *(const char *, int)'
+   64 | char    *index(const char *, int) __pure;                       /* LEGACY */
+      |          ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:76:5: error: 'keypress' undeclared (first use in this function)
+   76 | if(*keypress!= 'ñ'){
+      |     ^~~~~~~~
+../Core/Src/main.c:76:5: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:76:16: warning: multi-character character constant [-Wmultichar]
+   76 | if(*keypress!= 'ñ'){
+      |                ^~~
+../Core/Src/main.c: In function 'readPad':
+../Core/Src/main.c:105:35: warning: multi-character character constant [-Wmultichar]
+  105 |   if((index > 16) ||(*keypress == 'ñ'));
+      |                                   ^~~
+../Core/Src/main.c:105:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  105 |   if((index > 16) ||(*keypress == 'ñ'));
+      |   ^~
+../Core/Src/main.c:106:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  106 |     buffer[index++] = (char)keypress;
+      |     ^~~~~~
+../Core/Src/main.c:106:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  106 |     buffer[index++] = (char)keypress;
+      |                       ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:25:23: warning: 'TestImage' defined but not used [-Wunused-const-variable=]
+   25 | static const uint16_t TestImage [] ={
+      |                       ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+16:29:12 Build Failed. 3 errors, 5 warnings. (took 198ms)
+

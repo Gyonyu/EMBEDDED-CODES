@@ -1,0 +1,144 @@
+00:01:34 **** Incremental Build of configuration Debug for project NRFRX2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/nrf24l01.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/nrf24l01.d" -MT"Core/Src/nrf24l01.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/nrf24l01.o"
+In file included from ../Core/Src/main.c:3:
+../Core/Inc/nrf24l01.h:88:9: error: unknown type name 'SPI_HandleTypeDef'
+   88 |         SPI_HandleTypeDef *hSPIx;
+      |         ^~~~~~~~~~~~~~~~~
+In file included from ../Core/Src/nrf24l01.c:1:
+../Core/Inc/nrf24l01.h:88:9: error: unknown type name 'SPI_HandleTypeDef'
+   88 |         SPI_HandleTypeDef *hSPIx;
+      |         ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:12:1: error: unknown type name 'SPI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   12 | SPI_HandleTypeDef hspi2;
+      | ^~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../Core/Src/main.c: In function 'MX_SPI2_Init':
+../Core/Src/main.c:102:8: error: request for member 'Instance' in something not a structure or union
+  102 |   hspi2.Instance = SPI2;
+      |        ^
+../Core/Src/main.c:103:8: error: request for member 'Init' in something not a structure or union
+  103 |   hspi2.Init.Mode = SPI_MODE_SLAVE;
+      |        ^
+../Core/Src/nrf24l01.c: In function 'NRF24_Transmit':
+../Core/Src/nrf24l01.c:186:9: warning: implicit declaration of function 'HAL_SPI_Transmit' [-Wimplicit-function-declaration]
+  186 |         HAL_SPI_Transmit(node->hSPIx, &cmdtosend, 1, NRF_TX_TIMEOUT);
+      |         ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:103:21: error: 'SPI_MODE_SLAVE' undeclared (first use in this function)
+  103 |   hspi2.Init.Mode = SPI_MODE_SLAVE;
+      |                     ^~~~~~~~~~~~~~
+../Core/Src/main.c:103:21: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:104:8: error: request for member 'Init' in something not a structure or union
+  104 |   hspi2.Init.Direction = SPI_DIRECTION_2LINES;
+      |        ^
+../Core/Src/nrf24l01.c:187:16: warning: implicit declaration of function 'HAL_SPI_GetState'; did you mean 'HAL_DMA_GetState'? [-Wimplicit-function-declaration]
+  187 |         while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);
+      |                ^~~~~~~~~~~~~~~~
+      |                HAL_DMA_GetState
+../Core/Src/nrf24l01.c:187:49: error: 'HAL_SPI_STATE_READY' undeclared (first use in this function); did you mean 'HAL_DMA_STATE_READY'?
+  187 |         while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);
+      |                                                 ^~~~~~~~~~~~~~~~~~~
+      |                                                 HAL_DMA_STATE_READY
+../Core/Src/nrf24l01.c:187:49: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:104:26: error: 'SPI_DIRECTION_2LINES' undeclared (first use in this function)
+  104 |   hspi2.Init.Direction = SPI_DIRECTION_2LINES;
+      |                          ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:105:8: error: request for member 'Init' in something not a structure or union
+  105 |   hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
+      |        ^
+../Core/Src/nrf24l01.c: In function 'NRF24_Receive':
+../Core/Src/nrf24l01.c:281:49: error: 'HAL_SPI_STATE_READY' undeclared (first use in this function); did you mean 'HAL_DMA_STATE_READY'?
+  281 |         while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);
+      |                                                 ^~~~~~~~~~~~~~~~~~~
+      |                                                 HAL_DMA_STATE_READY
+../Core/Src/main.c:105:25: error: 'SPI_DATASIZE_8BIT' undeclared (first use in this function)
+  105 |   hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
+      |                         ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:106:8: error: request for member 'Init' in something not a structure or union
+  106 |   hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
+      |        ^
+../Core/Src/nrf24l01.c:282:9: warning: implicit declaration of function 'HAL_SPI_Receive' [-Wimplicit-function-declaration]
+  282 |         HAL_SPI_Receive(node->hSPIx, data, len, NRF_RX_TIMEOUT);
+      |         ^~~~~~~~~~~~~~~
+../Core/Src/main.c:106:28: error: 'SPI_POLARITY_LOW' undeclared (first use in this function)
+  106 |   hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
+      |                            ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:107:8: error: request for member 'Init' in something not a structure or union
+  107 |   hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
+      |        ^
+../Core/Src/nrf24l01.c: In function 'NRF24_Write_Reg':
+../Core/Src/nrf24l01.c:336:49: error: 'HAL_SPI_STATE_READY' undeclared (first use in this function); did you mean 'HAL_DMA_STATE_READY'?
+  336 |         while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);
+      |                                                 ^~~~~~~~~~~~~~~~~~~
+      |                                                 HAL_DMA_STATE_READY
+../Core/Src/main.c:107:25: error: 'SPI_PHASE_1EDGE' undeclared (first use in this function)
+  107 |   hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
+      |                         ^~~~~~~~~~~~~~~
+../Core/Src/main.c:108:8: error: request for member 'Init' in something not a structure or union
+  108 |   hspi2.Init.NSS = SPI_NSS_SOFT;
+      |        ^
+../Core/Src/nrf24l01.c: In function 'NRF24_Write_Buffer':
+../Core/Src/nrf24l01.c:346:49: error: 'HAL_SPI_STATE_READY' undeclared (first use in this function); did you mean 'HAL_DMA_STATE_READY'?
+  346 |         while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);
+      |                                                 ^~~~~~~~~~~~~~~~~~~
+      |                                                 HAL_DMA_STATE_READY
+../Core/Src/main.c:108:20: error: 'SPI_NSS_SOFT' undeclared (first use in this function)
+  108 |   hspi2.Init.NSS = SPI_NSS_SOFT;
+      |                    ^~~~~~~~~~~~
+../Core/Src/main.c:109:8: error: request for member 'Init' in something not a structure or union
+  109 |   hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
+      |        ^
+../Core/Src/nrf24l01.c: In function 'NRF24_Read_Reg':
+../Core/Src/nrf24l01.c:357:49: error: 'HAL_SPI_STATE_READY' undeclared (first use in this function); did you mean 'HAL_DMA_STATE_READY'?
+  357 |         while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);
+      |                                                 ^~~~~~~~~~~~~~~~~~~
+      |                                                 HAL_DMA_STATE_READY
+../Core/Src/main.c:109:25: error: 'SPI_FIRSTBIT_MSB' undeclared (first use in this function)
+  109 |   hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
+      |                         ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:110:8: error: request for member 'Init' in something not a structure or union
+  110 |   hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
+      |        ^
+../Core/Src/nrf24l01.c: In function 'NRF24_Read_Buffer':
+../Core/Src/nrf24l01.c:367:49: error: 'HAL_SPI_STATE_READY' undeclared (first use in this function); did you mean 'HAL_DMA_STATE_READY'?
+  367 |         while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);
+      |                                                 ^~~~~~~~~~~~~~~~~~~
+      |                                                 HAL_DMA_STATE_READY
+../Core/Src/main.c:110:23: error: 'SPI_TIMODE_DISABLE' undeclared (first use in this function); did you mean 'SPI_TIMODE_DISABLED'?
+  110 |   hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
+      |                       ^~~~~~~~~~~~~~~~~~
+      |                       SPI_TIMODE_DISABLED
+../Core/Src/main.c:111:8: error: request for member 'Init' in something not a structure or union
+  111 |   hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+      |        ^
+../Core/Src/nrf24l01.c: In function 'NRF24_Send_Cmd':
+../Core/Src/nrf24l01.c:376:49: error: 'HAL_SPI_STATE_READY' undeclared (first use in this function); did you mean 'HAL_DMA_STATE_READY'?
+  376 |         while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);
+      |                                                 ^~~~~~~~~~~~~~~~~~~
+      |                                                 HAL_DMA_STATE_READY
+../Core/Src/main.c:111:31: error: 'SPI_CRCCALCULATION_DISABLE' undeclared (first use in this function); did you mean 'SPI_CRCCALCULATION_DISABLED'?
+  111 |   hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               SPI_CRCCALCULATION_DISABLED
+../Core/Src/main.c:112:8: error: request for member 'Init' in something not a structure or union
+  112 |   hspi2.Init.CRCPolynomial = 10;
+      |        ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/nrf24l01.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:113:7: warning: implicit declaration of function 'HAL_SPI_Init'; did you mean 'HAL_GPIO_Init'? [-Wimplicit-function-declaration]
+  113 |   if (HAL_SPI_Init(&hspi2) != HAL_OK)
+      |       ^~~~~~~~~~~~
+      |       HAL_GPIO_Init
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:128:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  128 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:91:13: warning: 'MX_SPI2_Init' defined but not used [-Wunused-function]
+   91 | static void MX_SPI2_Init(void)
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+00:01:34 Build Failed. 33 errors, 6 warnings. (took 546ms)
+

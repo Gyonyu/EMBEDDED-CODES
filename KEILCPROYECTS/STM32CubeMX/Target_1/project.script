@@ -1,0 +1,5 @@
+load STM32F446ZETx
+project name STM32CubeMX
+project toolchain "MDK-ARM V5"
+project path "C:\KEILCPROYECTS\STM32CubeMX\Target_1"
+SetCopyLibrary "copy only"

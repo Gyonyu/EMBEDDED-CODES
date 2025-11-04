@@ -1,0 +1,22 @@
+14:38:40 **** Incremental Build of configuration Debug for project CARRITOFERIA446ZET6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/conf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/conf.d" -MT"Core/Src/conf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/conf.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:17:18: warning: unused variable 'opt' [-Wunused-variable]
+   17 |         uint32_t opt;
+      |                  ^~~
+arm-none-eabi-gcc -o "CARRITOFERIA446ZET6.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/kevin/STM32CubeIDE/workspace_1.19.0/CARRITOFERIA446ZET6/STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CARRITOFERIA446ZET6.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CARRITOFERIA446ZET6.elf
+ 
+arm-none-eabi-size  CARRITOFERIA446ZET6.elf 
+arm-none-eabi-objdump -h -S CARRITOFERIA446ZET6.elf  > "CARRITOFERIA446ZET6.list"
+   text	   data	    bss	    dec	    hex	filename
+   1288	      4	   1572	   2864	    b30	CARRITOFERIA446ZET6.elf
+Finished building: default.size.stdout
+ 
+Finished building: CARRITOFERIA446ZET6.list
+ 
+
+14:38:41 Build Finished. 0 errors, 1 warnings. (took 853ms)
+

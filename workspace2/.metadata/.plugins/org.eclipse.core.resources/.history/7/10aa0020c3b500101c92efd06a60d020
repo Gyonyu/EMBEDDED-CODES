@@ -1,0 +1,18 @@
+
+#include "conf.h"
+#include <stm32f446xx.h>
+
+// --------- Function ---------
+void confRCC(void);
+void confGPIO(void);
+// ---------- Class ----------
+// -------- Variables --------
+// ----------- Main -----------
+
+int main(void){
+	config();
+	while(1){
+	}
+
+
+}

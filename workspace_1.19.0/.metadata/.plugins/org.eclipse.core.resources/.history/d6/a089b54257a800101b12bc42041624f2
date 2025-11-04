@@ -1,0 +1,11 @@
+#include <stm32f446xx.h>
+void confRCC(void);
+void confGPIO(void);
+int main(void){
+
+
+}
+void confRCC(void){
+	RCC->AHB1ENR|=(1<<0);
+
+}

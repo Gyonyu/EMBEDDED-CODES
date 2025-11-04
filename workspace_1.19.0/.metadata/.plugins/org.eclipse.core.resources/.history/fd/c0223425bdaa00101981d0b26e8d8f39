@@ -1,0 +1,57 @@
+#include <stm32f446xx.h>
+
+
+// --------- Function ---------
+void confTIMER(void);
+void confDAC(void);
+void confRCC(void);
+void confGPIO(void);
+void configNVIC(void);
+
+void setClkPLL(void);
+void SN_sawtooth(void);
+void SN_triangle(void);
+void SN_sine(void);
+// ---------- Class ----------
+/*
+TIMER
+      CR1[ 0 ]= CEN =  1
+      CR2[6-4]= MMS =  2
+ DAC
+       CR[5-3]= SEL   =  0 (for Timer 6)
+       CR[2]  = TEN1  =  1
+       CR[1]  = BOFF1 =0
+       CR[0]  = EN    = 1
+       DHR12R1 <= Datos [12:0]
+       DOR => PA4
+ RCC
+     APB1ENR [29] = DAC    = 1
+             [4]  = T6     = 1
+     AHB1ENR [0]  = PortA  = 1
+GPIOA
+    MODER [8-9]  = 1  (PA4 Analog)
+
+*/
+// -------- Variables --------
+uint8_t signal = 0;
+
+#define SAWTOOTHWAVE 0
+#define TRIANGLEWAVE 1
+#define SINEWAVE 2
+// ----------- Main -----------
+
+
+int main(void){
+	confRCC(); /*Llamada de la funcion*/
+	confGPIO();
+    confTIMER();
+    while(1){
+
+
+
+}
+}
+
+
+
+

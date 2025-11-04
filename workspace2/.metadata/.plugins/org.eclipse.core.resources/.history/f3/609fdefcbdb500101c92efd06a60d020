@@ -1,0 +1,30 @@
+/*
+------- Kevin Lara  -------
+--------- Auf Das  ---------
+------- ADC w PWM  -------
+-------- 29/10/2025 --------
+Use TIM1 to generate complementary PWM outputs (main and complement) with dead
+time to emulate the class-D half-bridge outputs. Modulate the PWM with an input audio 
+signal (500 Hz–14 kHz). Sample the signal (either the raw PWM or the filtered output) with 
+the ADC triggered by a timer at a sampling rate chosen according to the Nyquist criterion.  
+
+*/
+// ------- Main Library -------
+#include "conf.h"
+#include <stm32f446xx.h>
+
+// --------- Function ---------
+void confRCC(void);
+void confGPIO(void);
+// ---------- Class ----------
+// -------- Variables --------
+// ----------- Main -----------
+
+int main(void){
+	config();
+	//TIM1->CCR1=40;
+	while(1){
+	}
+
+
+}

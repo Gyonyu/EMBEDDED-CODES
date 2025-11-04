@@ -1,0 +1,10 @@
+20:05:54 **** Incremental Build of configuration Debug for project NRFTX ****
+make -j8 all 
+arm-none-eabi-size  NRFTX.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9684	     20	   1700	  11404	   2c8c	NRFTX.elf
+Finished building: default.size.stdout
+ 
+
+20:05:55 Build Finished. 0 errors, 0 warnings. (took 155ms)
+

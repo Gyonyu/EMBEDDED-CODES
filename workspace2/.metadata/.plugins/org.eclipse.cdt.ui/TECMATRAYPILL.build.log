@@ -1,0 +1,10 @@
+14:49:25 **** Incremental Build of configuration Debug for project TECMATRAYPILL ****
+make -j8 all 
+arm-none-eabi-size  TECMATRAYPILL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1168	     40	   1568	   2776	    ad8	TECMATRAYPILL.elf
+Finished building: default.size.stdout
+ 
+
+14:49:25 Build Finished. 0 errors, 0 warnings. (took 171ms)
+

@@ -1,0 +1,18 @@
+#include <stm32f446xx.h>
+void confRCC(void);
+void confGPIO(void);
+int main(void){
+	confRCC();
+	confGPIO();
+	while(1){
+		GPIOA->ODR^=(1<<4);
+	}
+
+}
+void confRCC(void){
+	RCC->AHB1ENR|=(1<<0);
+
+}
+void confGPIO(void){
+	GPIOA->MODER|=(1<<8);
+}

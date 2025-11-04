@@ -1,0 +1,10 @@
+../Core/Src/conf.c:37:6:CAR_Leds	4	static
+../Core/Src/conf.c:50:6:CAR_Speed	16	static
+../Core/Src/conf.c:57:6:CAR_Front	4	static
+../Core/Src/conf.c:61:6:CAR_Back	4	static
+../Core/Src/conf.c:66:6:CAR_Direction	24	static
+../Core/Src/conf.c:74:6:confRCC	4	static
+../Core/Src/conf.c:80:6:confGPIO	4	static
+../Core/Src/conf.c:99:6:confTIMER	4	static
+../Core/Src/conf.c:141:6:delay_ms	24	static
+../Core/Src/conf.c:148:6:config	8	static
