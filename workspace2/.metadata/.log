@@ -8064,3 +8064,42 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-04 12:24:04.312
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-11-05 10:57:22.990 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-05 10:57:37.734
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-05 10:57:37.737
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/workspace2/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-05 10:57:46.440
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-05 10:59:08.876
+!MESSAGE Indexed 'PRACTICA8IIRFILTER' (19 sources, 81 headers) in 3.75 sec: 4,563 declarations; 21,879 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-11-05 12:16:58.183
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+!SESSION 2025-11-05 13:14:46.818 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-05 13:14:58.453
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-05 13:14:58.458
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/workspace2/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-05 13:15:09.333
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-05 13:45:24.663
+!MESSAGE Indexed 'USARTJP' (19 sources, 81 headers) in 2.67 sec: 4,563 declarations; 21,879 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)

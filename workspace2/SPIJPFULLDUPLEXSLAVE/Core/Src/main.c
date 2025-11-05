@@ -15,7 +15,7 @@ int main(void){
 			if(aux == LED_ON)
 				GPIOC->BSRR = (1<<13);
 				else if(aux ==LED_OFF)
-					GPIOC->BSRR=(1<<(2*13));
+					GPIOC->BSRR=(1<<(13+16));
 		}
 	}
 

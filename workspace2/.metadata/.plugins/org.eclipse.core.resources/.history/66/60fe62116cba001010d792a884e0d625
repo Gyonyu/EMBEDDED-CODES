@@ -1,0 +1,77 @@
+/*
+--------- Auf Das  ---------
+------- ADC w PWM  -------
+-------- 30/10/2025 --------
+
+*/
+// ------- Main Library -------
+#include "conf.h"
+#include <stm32f446xx.h>
+
+// --------- Function ---------
+void confRCC(void);
+void confGPIO(void);
+// ---------- Class ----------
+// -------- Variables --------
+// ----------- Main -----------
+uint16_t *conv(uint16_t*, const double*);
+const double h[21] = {
+    0,
+    0.0008661866575345,
+    -1.862664770708e-18,
+    0.009379606223572,
+    6.739184450067e-18,
+    0.03185584403768,
+    -1.276689426737e-17,
+    0.08430039893725,
+    1.764341394673e-17,
+    0.310762760459,
+    0.5003904280133,
+    0.310762760459,
+    1.764341394673e-17,
+    -0.08430039893725,
+    -1.276689426737e-17,
+    0.03185584403768,
+    6.739184450067e-18,
+    -0.009379606223572,
+    -1.862664770708e-18,
+    0.0008661866575345,
+    0
+};
+uint8_t i=0;
+uint16_t* smplVEC;
+uint16_t* out;
+int main(void){
+	config();
+
+	while(1);
+}
+
+
+
+
+void TIM2_IRQHandler(void){
+	while (TIM2->SR & (1<<0))
+	{
+		if(i<21){
+			smplVEC[i]=ADC1->DR;
+			i++;		
+		}
+		else{
+			out = conv(smplVEC,h);
+		}
+	}
+}
+
+uint16_t* conv(uint16_t* x, const double* h){
+	/*
+	Filter Shifted, Signal Fixed
+	*/
+	for (uint8_t n=0; n = 21; n++){
+		for (uint8_t k;k=2*n;k++){
+		out[n]+= x[k]*h[n-k];
+		}
+	}
+	return 0;
+
+}
