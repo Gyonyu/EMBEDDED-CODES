@@ -31,14 +31,15 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/kevin/Downloads/TFTDRIVER"/>
 			<item value="/home/kevin/STM32CubeIDE/workspace2/TFTRAYPILL"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
 			<item key="DIALOG_X_ORIGIN" value="701"/>
 			<item key="DIALOG_Y_ORIGIN" value="158"/>
-			<item key="DIALOG_WIDTH" value="895"/>
-			<item key="DIALOG_HEIGHT" value="692"/>
-			<item key="DIALOG_FONT_NAME" value="1|Noto Sans|10.0|0|GTK|1|"/>
+			<item key="DIALOG_WIDTH" value="885"/>
+			<item key="DIALOG_HEIGHT" value="693"/>
+			<item key="DIALOG_FONT_NAME" value="1|Sans|10.0|0|GTK|1|"/>
 		</section>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">

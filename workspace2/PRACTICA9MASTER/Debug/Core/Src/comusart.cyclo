@@ -1,0 +1,3 @@
+../Core/Src/comusart.c:10:6:USART_Sendchar	3
+../Core/Src/comusart.c:16:9:USART_Receivechar	2
+../Core/Src/comusart.c:22:6:USART_SendString	2

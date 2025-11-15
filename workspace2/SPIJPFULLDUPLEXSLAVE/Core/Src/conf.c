@@ -2,7 +2,7 @@
 
 void confRCC(void){
                 /*    IOB,    IOA,   AF*/
-    RCC->AHB1ENR |= (1<<0); // GPIOA SPI1
+    RCC->AHB1ENR |= (1<<0)|(1<<2); // GPIOA SPI1
     RCC->APB2ENR |=(1<<12);//ENCENDEMOS SPI1
 }
 void confGPIO(void){
@@ -22,6 +22,7 @@ void confSPI(void){
 	SPI1->CR1 |=(1<<9);//ACTIVAMOS SS POR SOFTWARE SSM
 	SPI1->CR1 |=(1<<8);//ACTIVAMOS EL SS INTERNO PARA FORZAR UNNA HABILITACIÓN EN EL MAESTRO SSI
 	*/
+	SPI1->CR1 |=(1<<9);//PRENDEMOS EL SPI
 	SPI1->CR1 |=(1<<6);//PRENDEMOS EL SPI
 }
 

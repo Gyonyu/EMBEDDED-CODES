@@ -10,15 +10,15 @@
 		<item key="DIALOG_X_ORIGIN" value="695"/>
 		<item key="DIALOG_Y_ORIGIN" value="214"/>
 		<item key="DIALOG_WIDTH" value="536"/>
-		<item key="DIALOG_HEIGHT" value="456"/>
-		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|10.0|0|GTK|1|"/>
+		<item key="DIALOG_HEIGHT" value="462"/>
+		<item key="DIALOG_FONT_NAME" value="1|Sans|10.0|0|GTK|1|"/>
 	</section>
 	<section name="NewSourceFileCreationWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="695"/>
 		<item key="DIALOG_Y_ORIGIN" value="214"/>
 		<item key="DIALOG_WIDTH" value="536"/>
-		<item key="DIALOG_HEIGHT" value="456"/>
-		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|10.0|0|GTK|1|"/>
+		<item key="DIALOG_HEIGHT" value="462"/>
+		<item key="DIALOG_FONT_NAME" value="1|Sans|10.0|0|GTK|1|"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="askReindex.detail" value="0"/>
@@ -33,7 +33,7 @@
 		<item key="showFolders" value="false"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
-		<item key="size.width" value="384"/>
+		<item key="size.width" value="609"/>
 		<item key="size.height" value="180"/>
 	</section>
 </section>

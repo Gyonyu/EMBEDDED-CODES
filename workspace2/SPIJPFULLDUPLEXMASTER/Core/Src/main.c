@@ -3,13 +3,12 @@
 #include <stm32f446xx.h>
 
 // --------- Function ---------
-void confRCC(void);
-void confGPIO(void);
+uint8_t SPI_Send_Data(uint8_t);
+void delay_ms(volatile uint32_t);
+
 // ---------- Class ----------
 // -------- Variables --------
 // ----------- Main -----------
-uint8_t SPI_Send_Data(uint8_t);
-void delay_ms(volatile uint32_t);
 int main(void){
 	config();
 	while(1){
@@ -33,7 +32,7 @@ uint8_t SPI_Send_Data(uint8_t dataTX){
 	SPI1->DR = dataTX;
 	while(!(SPI1->SR & SPI_SR_RXNE));
 	uint8_t dataRX=SPI1->DR;
-	while(!(SPI1->SR & SPI_SR_BSY));
+	while((SPI1->SR & SPI_SR_BSY));
 	return dataRX;
 }
 void delay_ms(volatile uint32_t ms){

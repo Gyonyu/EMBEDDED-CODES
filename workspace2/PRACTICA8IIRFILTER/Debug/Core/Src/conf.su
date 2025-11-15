@@ -3,7 +3,7 @@
 ../Core/Src/conf.c:16:6:confRCC	4	static
 ../Core/Src/conf.c:24:6:confGPIO	4	static
 ../Core/Src/conf.c:30:6:confTIMER	4	static
-../Core/Src/conf.c:43:6:confADC	4	static
-../Core/Src/conf.c:54:6:confDAC	4	static
-../Core/Src/conf.c:60:6:confNVIC	8	static
-../Core/Src/conf.c:66:6:config	8	static
+../Core/Src/conf.c:50:6:confADC	4	static
+../Core/Src/conf.c:58:6:confDAC	4	static
+../Core/Src/conf.c:65:6:confNVIC	8	static
+../Core/Src/conf.c:71:6:config	8	static

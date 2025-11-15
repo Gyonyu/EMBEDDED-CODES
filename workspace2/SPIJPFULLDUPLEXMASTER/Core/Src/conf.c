@@ -1,5 +1,14 @@
 #include "conf.h"
 
+/*
+PINOUT
+PA4 NSS
+PA5 SCLK
+PA6 MISO
+PA7 MOSI
+
+*/
+
 void confRCC(void){
                 /*    IOB,    IOA,   AF*/
     RCC->AHB1ENR |= (1<<0); // GPIOA SPI1
@@ -11,15 +20,25 @@ void confGPIO(void){
 	/*haniñitacion por hardware quiere deir que es habilitación manual*/
 	GPIOA->MODER |= (1<<(2*4));
 	GPIOA->OSPEEDR|=(3<<(2*4));
+	GPIOA->BSRR=(1<<4);
 }
 
 
 void confSPI(void){
-
-	SPI1->CR1 |=(3<<3);//seleccionamos un baudrate a frec de reloj de 1mhz
+	// Baud rate: divide by 16 for 1MHz communication (16MHz / 16 = 1MHz)
+	SPI1->CR1 |=(3<<3);//BR = 011 -> divide by 16
+	
+	// Master mode
 	SPI1->CR1 |=(1<<2);//activamos modo maestro
+	
+	// Software NSS management
 	SPI1->CR1 |=(1<<9);//ACTIVAMOS SS POR SOFTWARE SSM
-	SPI1->CR1 |=(1<<8);//ACTIVAMOS EL SS INTERNO PARA FORZAR UNNA HABILITACIÓN EN EL MAESTRO SSI
+	SPI1->CR1 |=(1<<8);//ACTIVAMOS EL SS INTERNO PARA FORZAR UNA HABILITACIÓN EN EL MAESTRO SSI
+	
+	// Frame format: 8-bit, MSB first (defaults are fine)
+	// CPOL = 0, CPHA = 0 (mode 0)
+	
+	// Enable SPI
 	SPI1->CR1 |=(1<<6);//PRENDEMOS EL SPI
 }
 

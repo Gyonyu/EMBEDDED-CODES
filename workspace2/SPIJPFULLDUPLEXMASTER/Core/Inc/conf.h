@@ -5,6 +5,6 @@ extern void config(void);
 extern void confRCC(void);
 extern void confGPIO(void);
 extern void confSPI(void);
-#define LED_ON 0X3A
-#define LED_OFF 0XA3
+#define LED_ON (uint8_t)0X3AU
+#define LED_OFF (uint8_t)0XA3U
 #endif
