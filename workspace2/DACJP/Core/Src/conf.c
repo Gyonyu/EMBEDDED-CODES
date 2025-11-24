@@ -14,10 +14,9 @@ void confGPIO(void){
 
 void confADC(void){
 	/*EMPEZAMOS LA CONFIGURACIÓN DEL ADC1 CON LA CONVERSIÓN EN EL CANAL 13*/
-	ADC1->SQR3|=(13<<0);
-	ADC1->CR2|=(3<<0);//ACTIVAMOS CONTINUOS CONV Y ADCON
 	ADC1->CR1|=(1<<8);//SACANMODE
 	ADC1->SMPR2|=(2<<0); //ESTAMOS CONFIGURANDO 28 CICLOS DE MUESTREO
+	ADC1->CR2|=(3<<0);//ACTIVAMOS CONTINUOS CONV Y ADCON
 }
 
 void confTIMER(void)
@@ -36,6 +35,7 @@ void config(void){
     confGPIO();
     confADC();
     confTIMER();
+    confDAC();
 }
 
 void confDAC(void){

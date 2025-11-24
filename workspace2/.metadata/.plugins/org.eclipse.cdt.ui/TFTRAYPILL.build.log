@@ -1,10 +1,10 @@
-18:12:19 **** Incremental Build of configuration Debug for project TFTRAYPILL ****
+17:06:33 **** Incremental Build of configuration Debug for project TFTRAYPILL ****
 make -j8 all 
 arm-none-eabi-size  TFTRAYPILL.elf 
    text	   data	    bss	    dec	    hex	filename
-  49828	     12	   1660	  51500	   c92c	TFTRAYPILL.elf
+   8964	     12	   1660	  10636	   298c	TFTRAYPILL.elf
 Finished building: default.size.stdout
  
 
-18:12:19 Build Finished. 0 errors, 0 warnings. (took 236ms)
+17:06:33 Build Finished. 0 errors, 0 warnings. (took 150ms)
 

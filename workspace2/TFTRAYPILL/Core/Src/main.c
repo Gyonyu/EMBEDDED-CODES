@@ -121,8 +121,8 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   init();
-  //ST7735_FillScreen(ST7735_BLACK);
-	ST7735_DrawImage(0,0,160,128,TestImage);
+  ST7735_FillScreen(ST7735_BLACK);
+	//ST7735_DrawImage(0,0,160,128,TestImage);
 
   while (1)
   {
