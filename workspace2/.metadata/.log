@@ -10818,3 +10818,18 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/kevin/STM32C
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-11-24 13:15:17.617
 !MESSAGE Indexed 'DMAJP' (19 sources, 81 headers) in 3.52 sec: 4,563 declarations; 21,879 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+!SESSION 2025-11-24 14:49:10.215 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-24 14:49:18.781
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-24 14:49:18.784
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/workspace2/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-24 14:49:26.080
+!MESSAGE Started RMI Server, listening on port 41337
