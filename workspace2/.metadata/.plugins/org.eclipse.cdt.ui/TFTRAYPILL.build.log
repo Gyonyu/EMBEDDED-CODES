@@ -1,4 +1,4 @@
-17:06:33 **** Incremental Build of configuration Debug for project TFTRAYPILL ****
+14:06:22 **** Build of configuration Debug for project TFTRAYPILL ****
 make -j8 all 
 arm-none-eabi-size  TFTRAYPILL.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  TFTRAYPILL.elf
 Finished building: default.size.stdout
  
 
-17:06:33 Build Finished. 0 errors, 0 warnings. (took 150ms)
+14:06:22 Build Finished. 0 errors, 0 warnings. (took 219ms)
 

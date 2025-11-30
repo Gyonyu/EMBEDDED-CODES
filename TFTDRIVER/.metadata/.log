@@ -1,0 +1,1065 @@
+!SESSION 2025-11-17 11:04:22.186 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/kevin/STM32CubeIDE/TFTDRIVER
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-17 11:04:29.708
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-17 11:04:29.709
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-17 11:04:32.596
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-17 11:08:45.456
+!MESSAGE Indexed 'TFTDRIVER' (19 sources, 81 headers) in 3.43 sec: 4,563 declarations; 21,879 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-17 11:12:52.664
+!MESSAGE Indexed 'TFTDRIVEREXAM' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-17 11:12:57.289
+!MESSAGE Indexed 'TFTDRIVEREXAM' (19 sources, 81 headers) in 3.23 sec: 4,563 declarations; 21,879 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+
+!ENTRY org.eclipse.ui 4 0 2025-11-17 12:14:33.614
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.IWorkbenchWindow.getShell()" because the return value of "org.eclipse.ui.IWorkbench.getActiveWorkbenchWindow()" is null
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment.getShell(AwtEnvironment.java:281)
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.SwtInputBlocker.block(SwtInputBlocker.java:98)
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment.invokeAwt(AwtEnvironment.java:179)
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite$3.widgetDisposed(EmbeddedSwingComposite.java:244)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:140)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1617)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1394)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4753)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:1560)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1401)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4753)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:1560)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1401)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4753)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:1560)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1401)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4753)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:1560)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1401)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4753)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:1560)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1401)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4753)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:1560)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:279)
+	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:503)
+	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:3435)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1401)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4753)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:575)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:3352)
+	at org.eclipse.swt.widgets.Display.release(Display.java:4573)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:276)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:168)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+!SESSION 2025-11-17 12:32:12.820 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-17 12:32:21.456
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-17 12:32:21.458
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-17 12:32:27.836
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-17 14:49:57.012
+!MESSAGE Indexed 'LCDTFTDRIVEREXAM' (19 sources, 81 headers) in 3.29 sec: 4,563 declarations; 21,879 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+!SESSION 2025-11-17 15:04:25.524 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-17 15:04:34.993
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-17 15:04:34.995
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-17 15:04:46.883
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-11-18 14:16:29.981 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-18 14:16:38.063
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-18 14:16:38.065
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-18 14:16:45.662
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 14:37:33.916
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 4 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 14:37:33.927
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 14:37:33.928
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 4 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 14:37:33.928
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 14:44:53.933
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 14:44:53.933
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 14:44:53.933
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 14:44:53.933
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 15:59:40.441
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 12 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 15:59:40.452
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 15:59:40.453
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 12 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-18 15:59:40.454
+!MESSAGE Existing sessions are:
+!SESSION 2025-11-19 13:21:58.580 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-19 13:22:06.799
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-19 13:22:06.801
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-19 13:22:12.865
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-11-22 16:07:46.334 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-22 16:07:54.845
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-22 16:07:54.848
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-22 16:08:00.052
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:47:29.608
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 1 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:47:29.609
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:47:29.610
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 1 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:47:29.610
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:52:32.661
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:52:32.661
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:52:32.662
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:52:32.663
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:56:02.663
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:56:02.663
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:56:02.664
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 16:56:02.664
+!MESSAGE Existing sessions are:
+!SESSION 2025-11-22 17:10:04.287 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/kevin/STM32CubeIDE/TFTDRIVER
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-22 17:10:11.145
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-22 17:10:11.146
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-22 17:10:16.840
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 17:41:17.804
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 7 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 17:41:17.805
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 17:41:17.806
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 7 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-22 17:41:17.806
+!MESSAGE Existing sessions are:
+!SESSION 2025-11-22 17:51:13.166 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/kevin/STM32CubeIDE/TFTDRIVER
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-22 17:51:20.814
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-22 17:51:20.826
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-22 17:51:26.805
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui 4 0 2025-11-22 21:55:53.007
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4903)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.graphics.GC.setFont(GC.java:3252)
+	at org.eclipse.swt.custom.CTabFolderRenderer.computeSize(CTabFolderRenderer.java:353)
+	at org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering.computeSize(CTabRendering.java:262)
+	at org.eclipse.swt.custom.CTabFolder.setItemSize(CTabFolder.java:2912)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3894)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3827)
+	at org.eclipse.swt.custom.CTabFolder.onResize(CTabFolder.java:2133)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:338)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1617)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:1211)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1658)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:979)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:311)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:260)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:178)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1877)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1661)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:1019)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:216)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1877)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1661)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:979)
+	at org.eclipse.swt.custom.StackLayout.layout(StackLayout.java:124)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1877)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1661)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:979)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:311)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:260)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:178)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1877)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1661)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:1019)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:216)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1877)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1661)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:979)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimmedPartLayout.layout(TrimmedPartLayout.java:177)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1877)
+	at org.eclipse.swt.widgets.Shell.resizeBounds(Shell.java:2299)
+	at org.eclipse.swt.widgets.Shell.setMenuBar(Shell.java:2619)
+	at org.eclipse.swt.widgets.Menu.releaseParent(Menu.java:1016)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1409)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:575)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:186)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:934)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$0(WorkbenchWindow.java:330)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5960)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:267)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:161)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.lambda$0(SWTPartRenderer.java:150)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:140)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1617)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1394)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4753)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:575)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:3352)
+	at org.eclipse.swt.widgets.Display.release(Display.java:4573)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:276)
+	at org.eclipse.swt.widgets.Display$SessionManagerListener.stop(Display.java:220)
+	at org.eclipse.swt.internal.SessionManagerDBus.handleStop(SessionManagerDBus.java:304)
+	at org.eclipse.swt.internal.SessionManagerDBus.handleEndSession(SessionManagerDBus.java:294)
+	at org.eclipse.swt.internal.SessionManagerDBus.g_signal_handler(SessionManagerDBus.java:325)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4514)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+!SESSION 2025-11-23 14:11:21.368 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-11-23 14:11:24.549
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-23 14:11:34.976
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-23 14:11:34.978
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-23 14:11:42.250
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 14:52:13.631
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 13 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 14:52:13.633
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 14:52:13.634
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 13 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 14:52:13.634
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:11:09.045
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 18 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:11:09.045
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:11:09.047
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 18 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:11:09.048
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:22:48.120
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 30 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:22:48.121
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:22:48.121
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 30 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:22:48.122
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:26:07.801
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 36 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:26:07.801
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:26:07.802
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 36 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:26:07.802
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:28:12.387
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 39 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:28:12.388
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:28:12.391
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 39 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:28:12.392
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:29:44.038
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 42 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:29:44.038
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:29:44.039
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 42 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:29:44.039
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:29:59.819
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 43 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:29:59.820
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:29:59.821
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 43 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:29:59.821
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:40:47.701
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 49 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:40:47.702
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:40:47.702
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 49 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:40:47.702
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:41:49.729
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 50 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:41:49.729
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:41:49.730
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 50 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:41:49.730
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:48:10.067
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 52 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:48:10.068
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:48:10.072
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 52 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:48:10.072
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:49:07.037
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 54 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:49:07.037
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:49:07.038
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 54 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:49:07.038
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.ui 4 4 2025-11-23 15:49:52.548
+!MESSAGE To avoid deadlock while executing Display.syncExec() with argument: com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil$$Lambda/0x00000001016eaf20@4514fc28, thread Worker-93: Launching TFTDRIVEREXAM Debug will interrupt UI thread.
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-11-23 15:49:52.548
+!MESSAGE Worker-93: Launching TFTDRIVEREXAM Debug thread is an instance of Worker or owns an ILock
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread Worker-93: Launching TFTDRIVEREXAM Debug
+	at java.management@21.0.3/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@21.0.3/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:482)
+	at org.eclipse.ui.internal.UILockListener.reportInterruption(UILockListener.java:208)
+	at org.eclipse.ui.internal.UILockListener.interruptUI(UILockListener.java:174)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:92)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:142)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5960)
+	at com.st.stm32cube.ide.common.utils.ThreadHelper.runInUiThreadSync(ThreadHelper.java:36)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.lookupStLink(StLinkFwUtil.java:306)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.validate(StLinkFwUtil.java:111)
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.preLaunchCheck(StLinkDebugHardware.java:289)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.preLaunchCheck(DSFDelegate.java:167)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:769)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-11-23 15:49:52.551
+!MESSAGE UI thread waiting on a job or lock.
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread main
+	at org.eclipse.swt.internal.cairo.Cairo.cairo_region_destroy(Native Method)
+	at org.eclipse.swt.graphics.GC.getClippingInPixels(GC.java:2149)
+	at org.eclipse.swt.graphics.GC.getClipping(GC.java:2073)
+	at org.eclipse.swt.graphics.GC.init(GC.java:2666)
+	at org.eclipse.swt.graphics.GC.gtk_new(GC.java:283)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3873)
+	at org.eclipse.swt.widgets.Scrollable.gtk_draw(Scrollable.java:396)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:506)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2570)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6842)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6162)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1598)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4514)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:608)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:404)
+	at org.eclipse.jface.dialogs.MessageDialog.openInformation(MessageDialog.java:501)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.lambda$6(StLinkFwUtil.java:307)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil$$Lambda/0x00000001016eaf20.run(Unknown Source)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:166)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:134)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:105)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:994)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:355)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:531)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl.disconnectTerminal(VT100TerminalControl.java:469)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl.disposeTerminal(VT100TerminalControl.java:415)
+	at org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbFullCliConsolePage.dispose(GdbFullCliConsolePage.java:125)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView.doDestroyPage(DebuggerConsoleView.java:304)
+	at org.eclipse.ui.part.PageBookView.removePage(PageBookView.java:806)
+	at org.eclipse.ui.part.PageBookView.partClosed(PageBookView.java:740)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView.lambda$1(DebuggerConsoleView.java:375)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView$$Lambda/0x00000001016ef630.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5040)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4520)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.ui.internal.Workbench$$Lambda/0x0000000100283470.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base@21.0.3/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base@21.0.3/java.lang.invoke.LambdaForm$MH/0x00000001000c6800.invoke(LambdaForm$MH)
+	at java.base@21.0.3/java.lang.invoke.LambdaForm$MH/0x00000001000c6c00.invokeExact_MT(LambdaForm$MH)
+	at java.base@21.0.3/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+	at java.base@21.0.3/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.3/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at app//org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at app//org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:50:00.857
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 56 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:50:00.858
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:50:00.859
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 56 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:50:00.859
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:54:21.456
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 59 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:54:21.456
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:54:21.457
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 59 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 15:54:21.457
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:01:51.004
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 61 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:01:51.004
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:01:51.005
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 61 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:01:51.005
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:03:37.376
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 62 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:03:37.377
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:03:37.379
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 62 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:03:37.379
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:04:11.273
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 63 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:04:11.274
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:04:11.274
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 63 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:04:11.275
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:06:51.996
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 65 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-23 16:06:51.996
+!MESSAGE Existing sessions are:
+!SESSION 2025-11-24 13:10:55.481 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-24 13:11:03.399
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-24 13:11:03.401
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-24 13:11:09.643
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-11-24 14:50:34.138 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/kevin/STM32CubeIDE/TFTDRIVER
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-24 14:50:41.406
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-24 14:50:41.419
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-24 14:50:47.565
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.debug.core 4 125 2025-11-24 16:50:44.122
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Target not available.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:164)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:83)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:138)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:473)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:714)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.performLookup(DsfSourceDisplayAdapter.java:223)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.run(DsfSourceDisplayAdapter.java:203)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10001 2025-11-24 16:50:44.137
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.ui 4 4 2025-11-24 16:55:24.367
+!MESSAGE To avoid deadlock while executing Display.syncExec() with argument: com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil$$Lambda/0x00000001014ff1b0@6acd6ad7, thread Worker-173: Launching TFTDRIVEREXAM Debug will interrupt UI thread.
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-11-24 16:55:24.367
+!MESSAGE Worker-173: Launching TFTDRIVEREXAM Debug thread is an instance of Worker or owns an ILock
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread Worker-173: Launching TFTDRIVEREXAM Debug
+	at java.management@21.0.3/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@21.0.3/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:482)
+	at org.eclipse.ui.internal.UILockListener.reportInterruption(UILockListener.java:208)
+	at org.eclipse.ui.internal.UILockListener.interruptUI(UILockListener.java:174)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:92)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:142)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5960)
+	at com.st.stm32cube.ide.common.utils.ThreadHelper.runInUiThreadSync(ThreadHelper.java:36)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.lookupStLink(StLinkFwUtil.java:306)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.validate(StLinkFwUtil.java:111)
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.preLaunchCheck(StLinkDebugHardware.java:289)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.preLaunchCheck(DSFDelegate.java:167)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:769)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-11-24 16:55:24.367
+!MESSAGE UI thread waiting on a job or lock.
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread main
+	at org.eclipse.swt.internal.gtk.OS.Call(Native Method)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:5641)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:824)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:608)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:404)
+	at org.eclipse.jface.dialogs.MessageDialog.openInformation(MessageDialog.java:501)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.lambda$6(StLinkFwUtil.java:307)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil$$Lambda/0x00000001014ff1b0.run(Unknown Source)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:166)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:134)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:105)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:994)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:355)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:531)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl.disconnectTerminal(VT100TerminalControl.java:469)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl.disposeTerminal(VT100TerminalControl.java:415)
+	at org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbFullCliConsolePage.dispose(GdbFullCliConsolePage.java:125)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView.doDestroyPage(DebuggerConsoleView.java:304)
+	at org.eclipse.ui.part.PageBookView.removePage(PageBookView.java:806)
+	at org.eclipse.ui.part.PageBookView.partClosed(PageBookView.java:740)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView.lambda$1(DebuggerConsoleView.java:375)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView$$Lambda/0x0000000101736898.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5040)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4520)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.ui.internal.Workbench$$Lambda/0x0000000100282ba8.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base@21.0.3/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base@21.0.3/java.lang.invoke.LambdaForm$MH/0x00000001000c6800.invoke(LambdaForm$MH)
+	at java.base@21.0.3/java.lang.invoke.LambdaForm$MH/0x00000001000c6c00.invokeExact_MT(LambdaForm$MH)
+	at java.base@21.0.3/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+	at java.base@21.0.3/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.3/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at app//org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at app//org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.ui 4 4 2025-11-24 16:55:25.435
+!MESSAGE To avoid deadlock while executing Display.syncExec() with argument: com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil$$Lambda/0x00000001014ff1b0@6acd6ad7, thread Worker-173: Launching TFTDRIVEREXAM Debug will interrupt UI thread.
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-11-24 16:55:25.435
+!MESSAGE Worker-173: Launching TFTDRIVEREXAM Debug thread is an instance of Worker or owns an ILock
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread Worker-173: Launching TFTDRIVEREXAM Debug
+	at java.management@21.0.3/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@21.0.3/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:482)
+	at org.eclipse.ui.internal.UILockListener.reportInterruption(UILockListener.java:208)
+	at org.eclipse.ui.internal.UILockListener.interruptUI(UILockListener.java:174)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:92)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:142)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5960)
+	at com.st.stm32cube.ide.common.utils.ThreadHelper.runInUiThreadSync(ThreadHelper.java:36)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.lookupStLink(StLinkFwUtil.java:306)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.validate(StLinkFwUtil.java:111)
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.preLaunchCheck(StLinkDebugHardware.java:289)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.preLaunchCheck(DSFDelegate.java:167)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:769)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-11-24 16:55:25.435
+!MESSAGE UI thread waiting on a job or lock.
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread main
+	at org.eclipse.swt.internal.gtk.OS.Call(Native Method)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:5641)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:824)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:608)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:404)
+	at org.eclipse.jface.dialogs.MessageDialog.openInformation(MessageDialog.java:501)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.lambda$6(StLinkFwUtil.java:307)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil$$Lambda/0x00000001014ff1b0.run(Unknown Source)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:166)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:134)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:105)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:994)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:355)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:531)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl.disconnectTerminal(VT100TerminalControl.java:469)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl.disposeTerminal(VT100TerminalControl.java:415)
+	at org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbFullCliConsolePage.dispose(GdbFullCliConsolePage.java:125)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView.doDestroyPage(DebuggerConsoleView.java:304)
+	at org.eclipse.ui.part.PageBookView.removePage(PageBookView.java:806)
+	at org.eclipse.ui.part.PageBookView.partClosed(PageBookView.java:740)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView.lambda$1(DebuggerConsoleView.java:375)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView$$Lambda/0x0000000101736898.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5040)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4520)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.ui.internal.Workbench$$Lambda/0x0000000100282ba8.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base@21.0.3/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base@21.0.3/java.lang.invoke.LambdaForm$MH/0x00000001000c6800.invoke(LambdaForm$MH)
+	at java.base@21.0.3/java.lang.invoke.LambdaForm$MH/0x00000001000c6c00.invokeExact_MT(LambdaForm$MH)
+	at java.base@21.0.3/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+	at java.base@21.0.3/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.3/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at app//org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at app//org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.ui 4 4 2025-11-24 16:55:26.505
+!MESSAGE To avoid deadlock while executing Display.syncExec() with argument: com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil$$Lambda/0x00000001014ff1b0@6acd6ad7, thread Worker-173: Launching TFTDRIVEREXAM Debug will interrupt UI thread.
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-11-24 16:55:26.505
+!MESSAGE Worker-173: Launching TFTDRIVEREXAM Debug thread is an instance of Worker or owns an ILock
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread Worker-173: Launching TFTDRIVEREXAM Debug
+	at java.management@21.0.3/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@21.0.3/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:482)
+	at org.eclipse.ui.internal.UILockListener.reportInterruption(UILockListener.java:208)
+	at org.eclipse.ui.internal.UILockListener.interruptUI(UILockListener.java:174)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:92)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:142)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5960)
+	at com.st.stm32cube.ide.common.utils.ThreadHelper.runInUiThreadSync(ThreadHelper.java:36)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.lookupStLink(StLinkFwUtil.java:306)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.validate(StLinkFwUtil.java:111)
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.preLaunchCheck(StLinkDebugHardware.java:289)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.preLaunchCheck(DSFDelegate.java:167)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:769)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.ui 4 4 2025-11-24 16:55:26.505
+!MESSAGE UI thread waiting on a job or lock.
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread main
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_window_activate_default(Native Method)
+	at org.eclipse.swt.widgets.Decorations.traverseReturn(Decorations.java:827)
+	at org.eclipse.swt.widgets.Control.traverse(Control.java:6677)
+	at org.eclipse.swt.widgets.Control.translateTraversal(Control.java:6649)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3996)
+	at org.eclipse.swt.widgets.Button.gtk_key_press_event(Button.java:682)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2595)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6842)
+	at org.eclipse.swt.widgets.Button.windowProc(Button.java:1345)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6162)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1598)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4514)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:608)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:404)
+	at org.eclipse.jface.dialogs.MessageDialog.openInformation(MessageDialog.java:501)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil.lambda$6(StLinkFwUtil.java:307)
+	at com.st.stm32cube.ide.mcu.debug.stlinkfwutil.StLinkFwUtil$$Lambda/0x00000001014ff1b0.run(Unknown Source)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:166)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:134)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:105)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:994)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:355)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:531)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl.disconnectTerminal(VT100TerminalControl.java:469)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl.disposeTerminal(VT100TerminalControl.java:415)
+	at org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbFullCliConsolePage.dispose(GdbFullCliConsolePage.java:125)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView.doDestroyPage(DebuggerConsoleView.java:304)
+	at org.eclipse.ui.part.PageBookView.removePage(PageBookView.java:806)
+	at org.eclipse.ui.part.PageBookView.partClosed(PageBookView.java:740)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView.lambda$1(DebuggerConsoleView.java:375)
+	at org.eclipse.cdt.debug.internal.ui.views.debuggerconsole.DebuggerConsoleView$$Lambda/0x0000000101736898.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5040)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4520)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.ui.internal.Workbench$$Lambda/0x0000000100282ba8.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base@21.0.3/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base@21.0.3/java.lang.invoke.LambdaForm$MH/0x00000001000c6800.invoke(LambdaForm$MH)
+	at java.base@21.0.3/java.lang.invoke.LambdaForm$MH/0x00000001000c6c00.invokeExact_MT(LambdaForm$MH)
+	at java.base@21.0.3/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+	at java.base@21.0.3/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.3/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at app//org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at app//org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+!SESSION 2025-11-25 12:19:45.278 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-25 12:19:53.160
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-25 12:19:53.162
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-25 12:19:59.203
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-11-26 10:49:49.720 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-26 10:49:55.608
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-26 10:49:55.610
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-26 10:50:01.698
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-11-26 12:48:45.710 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-26 12:48:52.982
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-26 12:48:52.983
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-26 12:48:58.728
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-11-26 15:56:17.362 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-26 15:56:25.393
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-26 15:56:25.395
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/TFTDRIVER/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-26 15:56:32.123
+!MESSAGE Started RMI Server, listening on port 41337

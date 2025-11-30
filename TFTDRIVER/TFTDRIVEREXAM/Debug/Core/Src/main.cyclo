@@ -1,0 +1,6 @@
+../Core/Src/main.cpp:23:5:int main()	2
+../Core/Src/main.cpp:47:6:void conf_osc()	2
+../Core/Src/main.cpp:73:1:void __static_initialization_and_destruction_0()	1
+../Core/Src/main.cpp:73:1:void __static_initialization_and_destruction_1()	1
+../Core/Src/main.cpp:73:1:cpp)	1
+../Core/Src/main.cpp:73:1:cpp)	1

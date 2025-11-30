@@ -1,0 +1,39 @@
+/*
+------- Kevin Lara  -------
+--------- Auf Das  ---------
+----------- TFT  -----------
+-------- 02/11/2025 --------
+*/
+// ------- Main Library -------
+#include "TFT_ST7735.h"
+#include "conf.h"
+// --------- Function ---------
+
+// ---------- Class ----------
+TFT_ST7735 Screen1;
+// -------- Variables --------
+// ----------- Main -----------
+
+int main(void){
+	config();
+	Screen1.INIT_FN();
+	/*
+	
+	
+
+	*/
+	
+	uint32_t BLAK = 0x0000;
+	uint32_t WAI =  0xFFFF;
+	uint32_t RED =  0xF800;
+	Screen1.FillRectangle(0, 0, 128, 160, 0x0000);
+	Screen1.FillRectangle(1, 1, 1, 1, RED); // Fill screen with red color
+
+    /*Screen1.FillRectangle(0, 0, 128, 160, 0x0000); // Fill screen with red color
+	//Screen1.DrawPixel(27, 27, 0xf800);
+	*/
+	while(1){
+
+		
+	}
+}

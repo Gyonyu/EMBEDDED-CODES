@@ -1,0 +1,63 @@
+/*
+------- Kevin Lara  -------
+--------- Auf Das  ---------
+----------- TFT  -----------
+-------- 02/11/2025 --------
+*/
+// ------- Main Library -------
+#include "TFT_ST7735.h"
+#include "conf.h"
+// --------- Function ---------
+
+// ---------- Class ----------
+TFT_ST7735 Screen1;
+// -------- Variables --------
+uint32_t BLAK = 0x0000;
+uint32_t WAI =  0xFFFF;
+uint32_t RED =  0xF800;
+uint32_t cian =  0x07ff;
+
+// ----------- Main -----------
+
+int main(void){
+	config();
+	// -- Config ADC ---
+	confADC();
+	Screen1.INIT_FN();
+	Screen1.FillRectangle(2, 2, 128, 160, 0x0000);
+	// -- Axes --
+	Screen1.FillRectangle(2, 2, 113, 1, WAI); 
+	Screen1.FillRectangle(2, 2, 1, 146, WAI); 
+
+	uint16_t iterative = 0;	
+
+	
+	while(1){//*
+		uint16_t adc_val = (ADC1->DR)>>5; // ADC-Val * 2^12/2^7 = ADC-Val / 32
+		iterative++;
+		Screen1.FillRectangle(adc_val+3,iterative+3, 1, 1, cian);
+		if(iterative>=145){
+			iterative=0;
+			Screen1.FillRectangle(2, 2, 128, 160, BLAK);
+
+		}//*/
+	}
+}
+
+
+// ------- Configuration -------
+
+
+
+void confADC(void){
+	/*EMPEZAMOS LA CONFIGURACIÓN DEL ADC1 CON LA CONVERSIÓN EN EL CANAL 13*/
+	//ADC1->SQR3|=(13<<0);
+	ADC1->CR2|=(3<<0);//ACTIVAMOS CONTINUOS CONV Y ADCON
+    ADC1->CR2|=(1<<30);//INICIAMOS LA CONVERSIÓN
+	ADC1->CR1|=(1<<8);//SCANMODE
+	ADC1->SMPR2|=(2<<0); //ESTAMOS CONFIGURANDO 28 CICLOS DE MUESTREO
+    
+}
+
+
+

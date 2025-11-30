@@ -10833,3 +10833,237 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-24 14:49:26.080
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-11-26 15:56:47.788 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/kevin/STM32CubeIDE/workspace2
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-26 15:56:54.821
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-26 15:56:54.833
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/workspace2/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-26 15:57:02.472
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-26 15:59:38.134
+!MESSAGE Indexed 'PRACTICA10SENSOR-LCDI2C' (22 sources, 118 headers) in 3.07 sec: 10,716 declarations; 41,447 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.46%)
+
+!ENTRY org.eclipse.ui 4 0 2025-11-26 16:52:02.391
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.swt.widgets.Display.removeListener(int, org.eclipse.swt.widgets.Listener)" because the return value of "org.eclipse.swt.widgets.Display.getCurrent()" is null
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.preShutdown(IDEWorkbenchAdvisor.java:402)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1056)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1414)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:59)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1414)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1385)
+	at org.eclipse.ui.internal.Workbench.lambda$16(Workbench.java:2810)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5847)
+	at org.eclipse.swt.widgets.Display$SessionManagerListener.isReadyToExit(Display.java:214)
+	at org.eclipse.swt.internal.SessionManagerDBus.queryReadyToExit(SessionManagerDBus.java:273)
+	at org.eclipse.swt.internal.SessionManagerDBus.handleQueryEndSession(SessionManagerDBus.java:284)
+	at org.eclipse.swt.internal.SessionManagerDBus.g_signal_handler(SessionManagerDBus.java:322)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4514)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-11-26 16:52:02.881
+!MESSAGE Device is disposed
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1551)
+	at org.eclipse.swt.widgets.Display.getThread(Display.java:3421)
+	at org.eclipse.swt.dnd.Clipboard.dispose(Clipboard.java:209)
+	at org.eclipse.cdt.internal.ui.navigator.CNavigatorEditActionGroup.dispose(CNavigatorEditActionGroup.java:65)
+	at org.eclipse.cdt.internal.ui.navigator.CNavigatorEditActionProvider.dispose(CNavigatorEditActionProvider.java:63)
+	at org.eclipse.ui.navigator.NavigatorActionService.dispose(NavigatorActionService.java:284)
+	at org.eclipse.ui.navigator.CommonNavigatorManager.dispose(CommonNavigatorManager.java:204)
+	at org.eclipse.ui.navigator.CommonNavigator.dispose(CommonNavigator.java:310)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:264)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:435)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:161)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:83)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:103)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:68)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:179)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:164)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:164)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:164)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:164)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.dispose(EclipseContextOSGi.java:102)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.bundleChanged(EclipseContextOSGi.java:144)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:982)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:235)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:134)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:126)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:229)
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:531)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:693)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-11-26 16:52:02.933
+!MESSAGE Device is disposed
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1551)
+	at org.eclipse.swt.widgets.Display.getThread(Display.java:3421)
+	at org.eclipse.swt.dnd.Clipboard.dispose(Clipboard.java:209)
+	at org.eclipse.cdt.make.ui.views.MakeView.dispose(MakeView.java:383)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:264)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:435)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:161)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:83)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:103)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:68)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:179)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:164)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:164)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:164)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:164)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.dispose(EclipseContextOSGi.java:102)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.bundleChanged(EclipseContextOSGi.java:144)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:982)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:235)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:134)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:126)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:229)
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:531)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:693)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2025-11-29 13:49:16.890 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-11-29 13:49:19.261
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-29 13:49:23.839
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-29 13:49:23.840
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/workspace2/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-29 13:49:30.439
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.debug.core 4 125 2025-11-29 15:13:40.348
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Target not available.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:164)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:83)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:138)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:473)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:714)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.performLookup(DsfSourceDisplayAdapter.java:223)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.run(DsfSourceDisplayAdapter.java:203)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10001 2025-11-29 15:13:40.353
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 11:04:09.406
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 26 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 11:04:09.408
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 11:04:09.408
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 26 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 11:04:09.408
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 11:38:54.806
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 35 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 11:38:54.808
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-11-30 11:55:58.859
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.internal.ui.actions.DsfTerminateCommand$3$1@5213c0ac): Status OK: unknown code=0 OK' resulted in a rejected execution exception.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 12:15:55.066
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 53 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 12:15:55.067
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 12:15:55.068
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 53 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-11-30 12:15:55.068
+!MESSAGE Existing sessions are:
+!SESSION 2025-11-30 12:27:48.416 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-11-30 12:27:57.252
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-11-30 12:27:57.255
+!MESSAGE Log4j2 initialized with config file /home/kevin/STM32CubeIDE/workspace2/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-11-30 12:28:04.966
+!MESSAGE Started RMI Server, listening on port 41337

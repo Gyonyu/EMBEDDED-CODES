@@ -1,0 +1,21 @@
+13:24:59 **** Incremental Build of configuration Debug for project TFTDRIVEREXAM ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "TFTDRIVEREXAM.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/kevin/STM32CubeIDE/TFTDRIVER/TFTDRIVEREXAM/STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TFTDRIVEREXAM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: TFTDRIVEREXAM.elf
+ 
+arm-none-eabi-size  TFTDRIVEREXAM.elf 
+arm-none-eabi-objdump -h -S TFTDRIVEREXAM.elf  > "TFTDRIVEREXAM.list"
+   text	   data	    bss	    dec	    hex	filename
+   3568	    272	   1896	   5736	   1668	TFTDRIVEREXAM.elf
+Finished building: default.size.stdout
+ 
+Finished building: TFTDRIVEREXAM.list
+ 
+13:25:03 **** Incremental Build of configuration Debug for project TFTDRIVEREXAM ****
+make -j8 all 
+arm-none-eabi-size  TFTDRIVEREXAM.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3568	    272	   1896	   5736	   1668	TFTDRIVEREXAM.elf
+Finished building: default.size.stdout
+ 
